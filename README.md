@@ -1,2 +1,2 @@
 # Programacion-red-Brayan-Sesena
-Repositorio para la EE Programación en Red
+Repositorio para entrega de evidencias de la EE Programación en Red.
