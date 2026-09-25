@@ -8,6 +8,6 @@
   - Para el caso de los clientes modifica la IP por la IP del servidor al que el cliente se conectara
 + 2.Ejecuta el programa con Python
   - Ejecuta el programa en una consola:
-    '''bash
+```bash
     python3 /ruta/programa.py
-    ''' 
+``` 
