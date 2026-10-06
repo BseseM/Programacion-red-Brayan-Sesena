@@ -1,7 +1,8 @@
 # Sistema de turnos LA FILA
 ## Práctica 6
----
-+ Caso: Se programará la fila de una ventanilla de atención: cada cliente que llega toma un turno y el servidor asigna números
+
+### Caso
+Se programará la fila de una ventanilla de atención: cada cliente que llega toma un turno y el servidor asigna números
 consecutivos (1, 2, 3, …) sin repeticiones ni saltos. Varios clientes solicitan turno de forma simultánea, lo que justifica la
 concurrencia con hilos; además, cualquier equipo puede consultar cuántos turnos se han asignado sin establecer
 conexión, lo que justifica UDP.
