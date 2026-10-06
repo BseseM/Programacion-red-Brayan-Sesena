@@ -14,7 +14,7 @@ responde turno>N\n con su número asignado.
 El servidor responde van>N\n con el total de turnos
 asignados.
 ---
-La implementación en Python se resuleve el tres programas:
+La implementación en Python se resuleve en tres programas:
 - fila_servidor.py: el programa encargado de ejecutar ambos servidores (TCP y UDP) y de procesar los mensajes con framing para TCP y los datagramas para UDP. A su vez es quien
   envia los mensajes turno>apodo\n para los clientes TCP informado cual el su turno y su apodo, mientras que en el lado de UDP envia van>turno\n cuando el cliente UDP envia
   la cadena "CUANTOS".
