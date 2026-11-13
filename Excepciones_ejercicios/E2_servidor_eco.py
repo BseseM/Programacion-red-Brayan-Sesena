@@ -38,7 +38,7 @@ def main():
         servidor.bind(("0.0.0.0", 5000))
     except OSError:
         #si el puerto 5000 está ocupado, el programa se detiene 
-        print("El puerto 5000 esta")
+        print("El puerto 5000 esta ocupado")
         return
 
     servidor.listen()

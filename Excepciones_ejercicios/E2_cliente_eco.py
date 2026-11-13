@@ -5,7 +5,7 @@ def main():
     try:
         with socket.create_connection(("127.0.0.1", 5000), timeout=5) as conexion:
             while True:
-                mensaje = input("> ").strip() 
+                mensaje = input("Escribe tu mensaje> ").strip() 
                 #envios de mensajes codificado con salto de linea
                 if not mensaje: 
                     continue
