@@ -4,3 +4,11 @@ Para la creación de los certificados se empleo la herramienta OpenSSL.
 Se probo con un pequeño programa en Pyhton para verificar que se crea bajo HTTPS
 ##
 Nota: No se realizo la práctica extra (6)
+###
+Ejecutar el servidor HTTPS
+
+```bash
+
+python3 servidor_https.py
+
+```
