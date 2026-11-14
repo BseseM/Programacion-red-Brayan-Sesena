@@ -1,3 +1,5 @@
+#COMENTAR o DESCOMENTAR SEGUN LO QUE SE QUIERA HACER
+
 import urllib.request
 import json
 
@@ -17,13 +19,16 @@ try:
 except urllib.error.HTTPError as e:
     print("Error HTTP:", e.code, e.read().decode("utf-8"))
 
+
 print("\n--- 2. CONSULTAR TODAS LAS INCIDENCIAS (GET) ---")
 with urllib.request.urlopen(f"{BASE}/incidencias") as response:
     print("Total de incidencias:", len(json.loads(response.read().decode("utf-8"))))
 
+
 print("\n--- 3. FILTROS COMBINADOS (GET /incidencias?tipo=alerta&estado=abierta) ---")
 with urllib.request.urlopen(f"{BASE}/incidencias?tipo=alerta&estado=abierta") as response:
     print("Filtradas:", json.loads(response.read().decode("utf-8")))
+
 
 print("\n--- 4. MODIFICAR CON PATCH ---")
 url_patch = f"{BASE}/incidencias/{inc_id}"
@@ -37,12 +42,15 @@ try:
 except urllib.error.HTTPError as e:
     print("Error HTTP:", e.code, e.read().decode("utf-8"))
 
+
 print("\n--- 5. CONSULTAR CONTADORES Y LOGS ---")
 with urllib.request.urlopen(f"{BASE}/contadores") as response:
     print("Contadores:", json.loads(response.read().decode("utf-8")))
 
 with urllib.request.urlopen(f"{BASE}/logs") as response:
     print("Logs:", json.loads(response.read().decode("utf-8")))
+    
+
 
 print("\n--- 6. ELIMINAR CON DELETE ---")
 req_del = urllib.request.Request(f"{BASE}/incidencias/{inc_id}", method="DELETE")

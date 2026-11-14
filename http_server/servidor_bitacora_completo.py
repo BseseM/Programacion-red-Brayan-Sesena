@@ -68,7 +68,7 @@ class Manejador(http.server.BaseHTTPRequestHandler):
             self._enviar(200)
         else:
             self._enviar(404)
-
+    
     def do_PUT(self):
         #implementación de PUT
         url = urlparse(self.path)
@@ -102,7 +102,8 @@ class Manejador(http.server.BaseHTTPRequestHandler):
                 return
 
         self._enviar(404, {"error": f"incidencia {buscado} no encontrada"})
-
+       
+        
     def log_message(self, formato, *args):
         pass
 
