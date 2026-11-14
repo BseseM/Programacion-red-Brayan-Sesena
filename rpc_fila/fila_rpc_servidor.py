@@ -25,3 +25,4 @@ servidor.register_function(tomar_turno, "tomar_turno")
 servidor.register_function(cuantos_van, "cuantos_van")
 print("Servidor escuchando en el puerto 5000...")
 servidor.serve_forever()
+
